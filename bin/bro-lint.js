@@ -4,7 +4,11 @@ const chalk = require('chalk');
 const inqueier = require('inquirer');
 const path = require('path');
 const fs = require('fs-extra');
-// const { channel } = require('diagnostics_channel');
+/**
+ * Sets up a linting environment for Bro projects by verifying project structure, handling existing ESLint configurations, and providing setup instructions.
+ *
+ * Checks for a `package.json` to ensure the current directory is a Bro project, prompts the user about overwriting existing ESLint configuration if present, and displays next steps for completing the linting setup. Exits the process with an error code if prerequisites are not met or if an error occurs.
+ */
 
 
 async function main() {
