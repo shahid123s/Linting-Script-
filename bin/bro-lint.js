@@ -4,6 +4,7 @@ const chalk = require('chalk');
 const inqueier = require('inquirer');
 const path = require('path');
 const fs = require('fs-extra');
+const runCLI = require('../lib/cli/index')
 // const { channel } = require('diagnostics_channel');
 
 
@@ -47,7 +48,9 @@ async function main() {
         }
 
         // Run the  initialization script
+        
 
+        runCLI()
         
 
 
