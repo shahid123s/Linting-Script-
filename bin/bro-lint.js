@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const chalk = require('chalk');
-const inqueier = require('inquirer');
+const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs-extra');
 const runCLI = require('../lib/cli/index')
@@ -30,7 +30,7 @@ async function main() {
         const eslintConfigPath = path.join(cwd, '.eslintrc.js');
         if (await fs.pathExists(eslintConfigPath)) {
             console.log(chalk.yellow.bold('ESLint configuration file found.'));
-            const answer = await inqueier.prompt({
+            const answer = await inquirer.prompt({
                 type: 'confirm',
                 name: 'overwrite',
                 message: 'Do you want to overwrite the existing ESLint configuration?',

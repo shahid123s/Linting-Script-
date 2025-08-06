@@ -2,6 +2,9 @@
   "name": "bro-linting-script",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "bro-lint": "./bin/bro-lint.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,11 +18,12 @@
     "url": "https://github.com/shahid123s/Linting-Script-/issues"
   },
   "homepage": "https://github.com/shahid123s/Linting-Script-#readme",
-  "description": "",
+  "description": "A comprehensive linting script tool for JavaScript/TypeScript projects with support for React, Clean Architecture, and SOLID principles",
   "dependencies": {
-    "chalk": "^5.4.1",
+    "eslint": "^8.57.0",
+    "chalk": "^4.1.2",
     "fs-extra": "^11.3.0",
-    "inquirer": "^12.7.0",
+    "inquirer": "^8.2.6",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-jsx-a11y": "^6.9.0",
